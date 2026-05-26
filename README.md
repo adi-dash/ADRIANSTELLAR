@@ -1,22 +1,28 @@
-# Soroban Project
+# PalayPay Escrow
 
-## Project Structure
+PalayPay is an on-chain escrow protocol securing agricultural supply chains.
 
-This repository uses the recommended structure for a Soroban project:
+## Problem and Solution
+Rice farmers wait up to 30 days for payment after delivering their harvest, leading to predatory debt cycles. PalayPay uses Soroban smart contracts to lock USDC from mills into escrow upon delivery agreement, automatically releasing funds to the farmer's mobile wallet the moment a trusted local inspector validates the yield.
 
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## Timeline
+Bootcamp / Hackathon MVP Scope (Complete end-to-end flow in < 48 hours).
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Contract ID:
+CC35KEOZNR7WXOIXDOCZXYTBO3UE7UXQHAVXM73NL7M5IA6TAXC2TGYK
+
+## Stellar Features Used
+- Soroban Smart Contracts
+- USDC Asset Transfers
+
+## Vision and Purpose
+To eliminate localized cash flow bottlenecks for independent farmers and automate accounts payable for local SME mills, proving that blockchain can solve real-world, non-speculative coordination problems.
+
+## Prerequisites
+- Rust (latest stable)
+- `soroban-cli` (v20.0.0 or compatible)
+- Stellar Testnet funded accounts
+
+## How to Build
+```bash
+soroban contract build
