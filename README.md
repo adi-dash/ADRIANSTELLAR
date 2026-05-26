@@ -1,3 +1,4 @@
+![ADSTELLAR Logo](ADSTELLAR.png)
 # PalayPay Escrow
 
 PalayPay is an on-chain escrow protocol securing agricultural supply chains.
